@@ -3,136 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: rgb(215, 222, 219);
-    }
-    .sidebar {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 250px;
-      height: 100vh;
-      background-color: #038d7d;
-      color: rgb(6, 6, 6);
-      padding: 20px;
-      text-align: center;
-    }
-    .sidebar img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 10px;
-    }
-    .sidebar h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    .sidebar p {
-      font-size: 0.9rem;
-      margin-bottom: 20px;
-    }
-    .sidebar a {
-      color: rgb(11, 12, 12);
-      text-decoration: none;
-      display: block;
-      margin: 10px 0;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    .sidebar a:hover {
-      background-color: #798f8a;
-    }
-    .content {
-      margin-left: 270px;
-      padding: 20px;
-    }
-    h2 {
-      border-bottom: 2px solid #2f5071;
-      padding-bottom: 10px;
-    }
-  </style>
+  <title>E-commerce</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
->
-  <div class="sidebar">
-    <img src="https://png.pngtree.com/png-clipart/20200224/original/pngtree-cartoon-color-simple-male-avatar-png-image_5230557.jpg" alt="Avatar">
-    <h2>VIJAY</h2>
-    <p>Frontend Developer </p>
-    <a href="#home">Home</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#interests">Interests</a>
-   
-    <a href="project">project</a>
-    <a href="#declaration">Declaration</a>
+  <!-- Login Page -->
+  <div id="login-page" class="login-container">
+    <h1>Login</h1>
+    <form action="#" id="login-form">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+      <button type="button" onclick="login()">Login</button>
+    </form>
   </div>
 
-  
-  <div class="content">
-   
-    <section id="home">
-      <h2>Home</h2>
-      <p>Welcome to my portfolio! I am a passionate developer specializing in creating modern and user-friendly applications. Below, you'll find more details about my education, skills, interests, and a personal declaration.</p>
-    </section>
-
-
-   
-    <section id="education">
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Bachelor of  Computer Science</strong> - sivet college , 2022 - 2025 </li>
-        <li><strong>+2</strong> - sir lady venkatasubba rao  School, 2020 - 2022 ,percentage-58%</li>
-        <li><strong>SSLC</strong> - baby  School, 2020 - 2022 ,percentage-68%</li>
-      </ul>
-    </section>
-
-    
-    <section id="skills">
-      <h2>Skills</h2>
-      <ul>
-     <li>html</li>
-    <li>css</li>
-     <li>excel</li>
-     <li>power point</li>
-      </ul>
-    </section>
-
-    
-    <section id="interests">
-      <h2>Interests</h2>
-      <ul>
-        <li>editing</li>
-        <li>reading</li>
-
-    </section>
-    <section id="project">
-      <h2>project</h2>
-      <ul>
-        <li>portfolio</li>
-        <li>e-commerece </li>
-      </ul>
-
-    </section>
-
-    
-    <section id="declaration">
-      <h2>Declaration</h2>
-      <p>I hereby declare that all the information provided above is true to the best of my knowledge and belief.</p>
-      <p>Signature: <strong>vijay</strong></p>
-    </section>
+  <!-- E-commerce Page -->
+  <div id="ecommerce-page" style="display: none;">
+    <header>
+      <h1> E-commerce</h1>
+    </header>
+    <main>
+      <section id="product-container" class="product-container"></section>
+      <aside>
+        <h2>Cart</h2>
+        <div id="cart-container" class="cart-container"></div>
+        <p id="total">Total: $0.00</p>
+      </aside>
+    </main>
   </div>
 
-  
-  
+  <script src="script.js"></script>
 </body>
 </html>
-l
